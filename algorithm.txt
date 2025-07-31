@@ -1,0 +1,18 @@
+Algorithm to convert vectors in GCS to LCS coordinate system
+-------------------------------------------------------------
+
+1. Vector Translation
+    (do z - o, x - o)
+
+2. Compute Magnitude
+    (do sqrt(zx2 + zy2 + zz2))
+
+3. Compute direction Cosines
+    (zi = zx / Magnitude)
+
+# now we have x,y,z direction vectors
+
+4. do-
+    fx_local = fx * i + fy * j + fz * k
+
+//do same to get other forces and moments
