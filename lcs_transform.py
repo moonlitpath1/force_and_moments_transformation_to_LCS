@@ -100,7 +100,8 @@ def lcs_transform(f,o,z,x):
 #main function
 if __name__ == '__main__':
 
-    csv_file_path = '/home/anushka/anu/projects/force_and_moments_transformation_to_LCS/WORK/Plate_small_all3ResultSets_inGlobal.csv'
+    #give file path.
+    csv_file_path = ''
 
     # Read the file
     df = pd.read_csv(csv_file_path)
