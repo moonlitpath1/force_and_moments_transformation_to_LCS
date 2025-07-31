@@ -1,6 +1,8 @@
 # user data
 from math import sqrt
 import pandas as pd
+import env
+
 
 #-------------------------------------
 
@@ -100,11 +102,8 @@ def lcs_transform(f,o,z,x):
 #main function
 if __name__ == '__main__':
 
-    #give file path.
-    csv_file_path = ''
-
     # Read the file
-    df = pd.read_csv(csv_file_path)
+    df = pd.read_csv(env.csv_file_path)
 
     # Forward-fill to get the filename down to all rows
     df['Result File'] = df['Result File'].ffill()
@@ -129,3 +128,4 @@ if __name__ == '__main__':
     df_clean = df_data[['file', 'nodeid', 'force', 'moment']].reset_index(drop=True)
 
     print(df_clean)
+
