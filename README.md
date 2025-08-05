@@ -1,6 +1,7 @@
 # Force and Moments Transformation Tool - User Manual
 1. input proper csv path for csv file containing force and moment and lcs data in env file, in proper format, as specified.
-2. run code lcs_transform to get output vectors in lsc format.
+2. run code lcs_transform to get output vectors in lsc format
+3. also exports data in CSV file into a folder as defined
 
 
 
@@ -56,7 +57,8 @@ This is a standalone project that can be further integrated into simulation and 
 - input files
 - python libraries:
   - *pandas*
-  - <add other libraries>
+  - _math_
+  - _os_
 
 ## 3. Functional Requrirements
 - Accept and Validate all GCS force/moment data
